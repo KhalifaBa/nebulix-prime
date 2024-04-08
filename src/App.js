@@ -3,7 +3,6 @@ import "./App.css";
 import Films from "./Films";
 
 const App = () => {
-  console.log(process.env);
   const [film, setFilms] = useState([]);
   const [filmChercher, setFilmChercher] = useState("");
   const listeFilms = async () => {
