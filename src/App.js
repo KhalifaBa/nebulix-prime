@@ -10,7 +10,7 @@ const App = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization: "",
+        Authorization: process.env.AUTHORIZATION_API,
       },
     };
     const response = await fetch(
@@ -27,7 +27,7 @@ const App = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization: "",
+        Authorization: process.env.AUTHORIZATION_API,
       },
     };
 
