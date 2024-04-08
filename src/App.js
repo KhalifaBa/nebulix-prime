@@ -10,8 +10,7 @@ const App = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YWY0YzA5YWRhN2YyMjlkNDEyN2JjYTQ3ZjkzYmY1YSIsInN1YiI6IjY2MTA2Y2YxYzY4YjY5MDE0YTAzNGMwYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HZlPO7fJHMwOERiuaJ_kBPwGR7X2X2DJC39RD6ha2jE",
+        Authorization: "",
       },
     };
     const response = await fetch(
@@ -28,8 +27,7 @@ const App = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YWY0YzA5YWRhN2YyMjlkNDEyN2JjYTQ3ZjkzYmY1YSIsInN1YiI6IjY2MTA2Y2YxYzY4YjY5MDE0YTAzNGMwYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HZlPO7fJHMwOERiuaJ_kBPwGR7X2X2DJC39RD6ha2jE",
+        Authorization: "",
       },
     };
 
