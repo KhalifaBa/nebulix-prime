@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import DetailFilm from "./DetailFilm";
+import "./output.css";
 
 export const Details = () => {
   const [detail, setDetail] = useState([]);

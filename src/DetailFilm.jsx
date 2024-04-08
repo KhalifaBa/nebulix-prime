@@ -35,7 +35,7 @@ const DetailFilm = ({ film }) => {
           </h2>
         </div>
         <div>
-          <h2>
+          <h2 className="text-balance">
             Vue d'ensemble du film : <p>{film.overview}</p>
           </h2>
         </div>

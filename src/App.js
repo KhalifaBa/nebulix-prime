@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./output.css";
 import "./App.css";
 import Films from "./Films";
 
