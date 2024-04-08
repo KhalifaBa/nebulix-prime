@@ -3,7 +3,7 @@ import "./App.css";
 import Films from "./Films";
 
 const App = () => {
-  console.log(process.env.AUTHORIZATION_API);
+  console.log(process.env);
   const [film, setFilms] = useState([]);
   const [filmChercher, setFilmChercher] = useState("");
   const listeFilms = async () => {
@@ -11,7 +11,7 @@ const App = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization: process.env.AUTHORIZATION_API,
+        Authorization: process.env.REACT_APP_AUTHORIZATION_API,
       },
     };
     const response = await fetch(
@@ -28,7 +28,7 @@ const App = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization: process.env.AUTHORIZATION_API,
+        Authorization: process.env.REACT_APP_AUTHORIZATION_API,
       },
     };
 
