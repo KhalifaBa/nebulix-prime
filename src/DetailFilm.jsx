@@ -17,31 +17,34 @@ const DetailFilm = ({ film }) => {
             />
           </div>
         </div>
-        <div>
+        <div className="titre">
           <h1> {film.title}</h1>
         </div>
-        <div>
-          <h2> Notes : {Math.round(film.vote_average * 10) / 10} / 10</h2>
+        <div className="content">
+          <div className="notes">
+            <h2> Notes : {Math.round(film.vote_average * 10) / 10} / 10</h2>
+          </div>
+          <div className="sortie">
+            <h2>Date de sortie : {film.release_date}</h2>
+          </div>
+          <div>
+            <h2 className="genre">
+              Genre :
+              {film.genres?.length > 0
+                  ? film.genres.map((genre) => " " + genre.name + " ")
+                  : " Aucun genre"}
+            </h2>
+          </div>
+          <div className="description">
+            <h2>
+              Vue d'ensemble du film : <p>{film.overview}</p>
+            </h2>
+          </div>
+          <div className="duree">
+            <h2>Durée du films : {Math.round(film.runtime)} minutes</h2>
+          </div>
         </div>
-        <div>
-          <h2>Date de sortie : {film.release_date}</h2>
-        </div>
-        <div>
-          <h2>
-            Genre :
-            {film.genres?.length > 0
-              ? film.genres.map((genre) => " " + genre.name + " ")
-              : " Aucun genre"}
-          </h2>
-        </div>
-        <div>
-          <h2 className="text-balance">
-            Vue d'ensemble du film : <p>{film.overview}</p>
-          </h2>
-        </div>
-        <div>
-          <h2>Durée du films : {Math.round(film.runtime)} minutes</h2>
-        </div>
+
       </div>
     </div>
   );

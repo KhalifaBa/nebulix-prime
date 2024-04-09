@@ -170,7 +170,16 @@ h1 {
   font-weight: 500;
   color: #f0f0f0;
 }
-
+.titre h1 {
+  position: absolute;
+  margin-left: 400px;
+  top:40px;
+}
+.content{
+  position: absolute;
+  margin-left: 400px;
+  top: 200px;
+}
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
   font-family: "Roboto Slab", serif;
@@ -204,6 +213,10 @@ h1 {
     font-size: 1rem;
   }
 
+  .content{
+    float: left;
+    margin-top: 20%;
+  }
   .search img {
     width: 20px;
     height: 20px;
@@ -218,7 +231,10 @@ h1 {
   h1 {
     font-size: 2rem;
   }
-
+  .content{
+    float: left;
+    margin-top: 20%;
+  }
   .container {
     margin-top: 2rem;
   }
