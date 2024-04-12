@@ -1,10 +1,14 @@
 import React from "react";
 import "./output.css";
 import "./App.css";
+import { Link } from "react-router-dom";
 
 const DetailFilm = ({ film }) => {
   return (
     <div className="detail">
+      <Link className="retour" to={"/"}>
+        Retour
+      </Link>
       <div className="poster">
         <div key={film.id} className="movie">
           <div></div>

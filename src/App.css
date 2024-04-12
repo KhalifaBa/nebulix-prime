@@ -66,6 +66,15 @@ h1 {
   color: #a1a1a1;
   background: #1f2123;
 }
+.retour {
+  color: white;
+  border-radius: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  background-color: #f32525;
+}
 .notes {
   height: 200px;
   width: 200px;
