@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const lesFilms = ({ film }) => {
   return (
-    <a href={"/detail/" + film.id}>
+    <Link to={"/detail/" + film.id}>
       <div key={film.id} onclick="" className="movie">
         <div>
           <p>{film.release_date.split("-")[0]}</p>
@@ -22,7 +23,7 @@ const lesFilms = ({ film }) => {
           <h3>{film.title}</h3>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
