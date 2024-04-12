@@ -66,7 +66,22 @@ h1 {
   color: #a1a1a1;
   background: #1f2123;
 }
-
+.notes {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+  background-color: #ff4027;
+  border-radius: 50%;
+  display: inline-block;
+}
+.content {
+  color: #f0f0f0;
+}
+.notes h2 {
+  margin-top: 70px;
+  font-size: 35px;
+  text-align: center;
+}
 .search img {
   width: 35px;
   height: 35px;
@@ -173,9 +188,9 @@ h1 {
 .titre h1 {
   position: absolute;
   margin-left: 400px;
-  top:40px;
+  top: 40px;
 }
-.content{
+.content {
   position: absolute;
   margin-left: 400px;
   top: 200px;
@@ -213,7 +228,7 @@ h1 {
     font-size: 1rem;
   }
 
-  .content{
+  .content {
     float: left;
     margin-top: 20%;
   }
@@ -231,7 +246,7 @@ h1 {
   h1 {
     font-size: 2rem;
   }
-  .content{
+  .content {
     float: left;
     margin-top: 20%;
   }

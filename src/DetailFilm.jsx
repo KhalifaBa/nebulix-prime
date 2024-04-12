@@ -1,10 +1,12 @@
 import React from "react";
+import "./output.css";
+import "./App.css";
 
 const DetailFilm = ({ film }) => {
   return (
     <div className="detail">
       <div className="poster">
-        <div key={film.id} onclick="" className="movie">
+        <div key={film.id} className="movie">
           <div></div>
           <div>
             <img
@@ -22,7 +24,7 @@ const DetailFilm = ({ film }) => {
         </div>
         <div className="content">
           <div className="notes">
-            <h2> Notes : {Math.round(film.vote_average * 10) / 10} / 10</h2>
+            <h2>{Math.round(film.vote_average * 10) / 10} / 10</h2>
           </div>
           <div className="sortie">
             <h2>Date de sortie : {film.release_date}</h2>
@@ -31,8 +33,8 @@ const DetailFilm = ({ film }) => {
             <h2 className="genre">
               Genre :
               {film.genres?.length > 0
-                  ? film.genres.map((genre) => " " + genre.name + " ")
-                  : " Aucun genre"}
+                ? film.genres.map((genre) => " " + genre.name + " ")
+                : " Aucun genre"}
             </h2>
           </div>
           <div className="description">
@@ -41,10 +43,11 @@ const DetailFilm = ({ film }) => {
             </h2>
           </div>
           <div className="duree">
-            <h2>Durée du films : {Math.round(film.runtime)} minutes</h2>
+            <h2 className="">
+              Durée du films : {Math.round(film.runtime)} minutes
+            </h2>
           </div>
         </div>
-
       </div>
     </div>
   );

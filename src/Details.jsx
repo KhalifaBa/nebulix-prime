@@ -2,7 +2,15 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import DetailFilm from "./DetailFilm";
 import "./output.css";
-
+const notesBackgroundColor = (film) => {
+  if (film.vote_average >= 7) {
+    return (document.querySelector(".notes").style.backgroundColor = "green");
+  } else if (film.vote_average >= 4) {
+    return (document.querySelector(".notes").style.backgroundColor = "orange");
+  } else {
+    return (document.querySelector(".notes").style.backgroundColor = "red");
+  }
+};
 export const Details = () => {
   const [detail, setDetail] = useState([]);
   const { id } = useParams();
@@ -26,12 +34,11 @@ export const Details = () => {
 
   useEffect(() => {
     detailFilm();
-  }, []);
+    notesBackgroundColor(detail);
+  }, [detail]);
+
   return (
     <div className="">
-      <div>
-        <a href="/">Retourner à l'accueil</a>
-      </div>
       <DetailFilm film={detail} />
     </div>
   );
